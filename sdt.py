@@ -16,8 +16,8 @@ def showBanner():
         -R <repeat_times>     Number of overwrite passes (default: 5)
 
     EXAMPLES:
-        python script.py -f myfile.txt
-        python script.py -r myfolder -R 7
+        python3 sdt.py -f myfile.txt
+        python3 sdt.py -r myfolder -R 7
 
     IMPORTANT:
         * Please run this script as a superuser!
@@ -29,8 +29,8 @@ def showBanner():
 
 if not os.geteuid() == 0:
     showBanner()
-    print("\n\n\n")
-    print("Please run this script as super user!")
+    print("\n")
+    print("Please run this script as super (root) user!\n\n")
     sys.exit()
 
 class start:
